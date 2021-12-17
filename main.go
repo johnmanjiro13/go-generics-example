@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"constraints"
+	"fmt"
+)
 
 type Number interface {
-	int64 | float64
+	constraints.Integer | constraints.Float
 }
 
 func main() {
